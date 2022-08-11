@@ -5,6 +5,10 @@ def save_name(names_file):
     my_file.close()
 
 
+def moshe(david):
+    print(david)
+
+
 def show_name(names_file, blabla):
     my_file = open(names_file, "r")
     for name in my_file.readlines():
