@@ -9,6 +9,10 @@ def moshe(david):
     print(david)
 
 
+def haim(avi):
+    print(avi)
+
+
 def show_name(names_file, blabla):
     my_file = open(names_file, "r")
     for name in my_file.readlines():
