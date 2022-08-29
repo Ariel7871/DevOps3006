@@ -1,5 +1,6 @@
 import random
 from time import sleep
+from Score import add_score
 
 
 def difficulty_Guess():
@@ -41,6 +42,7 @@ def Start_Guess_Game1():
     y = int(input("What is the number? "))
     if x == y:
         print("You Got it right! Well Done!")
+        add_score(1)
     elif x != y:
         print("Bop, That wrong. Try next time!")
 
@@ -54,6 +56,7 @@ def Start_Guess_Game2():
     y = int(input("What is the number? "))
     if x == y:
         print("You Got it right! Well Done!")
+        add_score(2)
     elif x != y:
         print("Bop, That wrong. Try next time!")
 
@@ -67,5 +70,6 @@ def Start_Guess_Game3():
     y = int(input("What is the number? "))
     if x == y:
         print("You Got it right! Well Done!")
+        add_score(3)
     elif x != y:
         print("Bop, That wrong. Try next time!")
