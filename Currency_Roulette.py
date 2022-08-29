@@ -2,6 +2,7 @@ import random
 from time import sleep
 # pip install forex-python (is must for installing)
 from forex_python.converter import CurrencyRates
+from Score import add_score
 
 c = CurrencyRates()
 
@@ -51,6 +52,7 @@ def Start_Currency_Game1():
     if x + 1 > y > x - 1 or y == x:
         print("You Got it right! Well Done!")
         print(f"Your number was {y} but the Rate is {x}")
+        add_score(1)
     else:
         print("Bop, You got it wrong... Try Next Time!")
 
@@ -69,6 +71,8 @@ def Start_Currency_Game2():
 
     if x + 0.5 > y > x - 0.5 or y == x:
         print("You Got it right! Well Done!")
+        print(f"Your number was {y} but the Rate is {x}")
+        add_score(2)
     else:
         print("Bop, You got it wrong... Try Next Time!")
 
@@ -87,5 +91,7 @@ def Start_Currency_Game3():
 
     if x + 0.2 > y > x - 0.2 or y == x:
         print("You Got it right! Well Done!")
+        print(f"Your number was {y} but the Rate is {x}")
+        add_score(3)
     else:
         print("Bop, You got it wrong... Try Next Time!")

@@ -4,6 +4,7 @@ from time import sleep
 from MemoryGame import Memory_Game
 from GuessGame import Guess_Game
 from Currency_Roulette import Currency_Roulette
+from Score import add_score
 
 name = input("enter your name: ")
 
@@ -31,6 +32,7 @@ game = int(input("Please select the number of the game you want to play: "))
 
 if game == 1:
     Memory_Game()
+
 
 elif game == 2:
     Guess_Game()
